@@ -1,11 +1,13 @@
 @import '~normalize.css';
+@import 'utils/vars.scss';
+@import 'utils/mixins.scss';
+@import 'utils/fonts.scss';
+@import 'utils/scaffolding.scss';
 
-.body {
-  font-size: 18px;
-}
-
-.container {
-  background-color: aqua;
-  width: 100px;
-  height: 200px;
-}
+@import 'blocks/header.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/about.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/card.scss';
+@import 'blocks/typography.scss';
+@import 'blocks/card-wrapper.scss';

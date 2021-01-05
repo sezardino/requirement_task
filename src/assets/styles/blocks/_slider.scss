@@ -1,0 +1,41 @@
+.slider {
+  position: relative;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include btn-reset;
+  &--next {
+    right: 10px;
+  }
+
+  &--prev {
+    left: 10px;
+  }
+}
+
+@media(max-width: $desktopWidth) {
+  .slider__arrow {
+    &--next {
+      right: -20px;
+    }
+
+    &--prev {
+      left: -20px;
+    }
+  }
+}
+
+@media(max-width: $smDesktopWidth) {
+  .slider__arrow {
+    &--next {
+      right: 0;
+    }
+
+    &--prev {
+      left: 0;
+    }
+  }
+}

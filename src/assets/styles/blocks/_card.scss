@@ -1,0 +1,26 @@
+.card {
+  display: inline-block;
+  background-color: $bg_card;
+  width: 100%;
+  min-height: 228px;
+  text-align: center;
+
+  padding: 40px 35px;
+}
+
+.card__title {
+  color: $fc_title;
+  font-size: $fs_stitle;
+  line-height: $flh_stitle;
+}
+
+.card__description {
+  margin-top: 5px;
+  color: $fc_text;
+  font-size: $fs_text;
+  line-height: $flh_text;
+}
+
+.card__img {
+  margin-top: 10px;
+}

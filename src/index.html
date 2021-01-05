@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSD2CSS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -29,14 +34,16 @@
       <section class="hero">
         <div class="container hero__container">
           <header class="hero__header">
-            <h2 class="title title--white hero__title">Heading</h2>
-            <p class="title-descr title-descr--white">
+            <h2 class="title title--white title--hero hero__title">Heading</h2>
+            <p
+              class="title-descr title-descr--white title-descr--hero hero__title-descr"
+            >
               Lorem ipsum dolor sit amet, consect etur adipiscing elit.
             </p>
           </header>
           <div class="slider hero__body">
-            <div class="slider__inner">
-              <div class="card slider__slide">
+            <ul class="slider__inner card-wrapper">
+              <li class="card slider__slide">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">Lorem ipsum dolor sit amet.</p>
                 <img
@@ -49,28 +56,35 @@
                   "
                   class="card__img"
                 />
-              </div>
-              <div class="card slider__slide">
+              </li>
+              <li class="card slider__slide">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
-                  Aenea
+                  Aenea uismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus.
                 </p>
-              </div>
-              <div class="card slider__slide">
+              </li>
+              <li class="card slider__slide">
                 <h3 class="card__title">Ultra Mega Super Long Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
-                  Aenea
+                  Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet
                 </p>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="slider__arrows-wrapper">
               <button class="slider__arrow slider__arrow--next">
                 <span class="visually-hidden">next slide</span>
+                <svg width="21.03" height="40" class="">
+                  <use xlink:href="./assets/images/icons.svg#arrow-right"></use>
+                </svg>
               </button>
               <button class="slider__arrow slider__arrow--prev">
                 <span class="visually-hidden">prev slide</span>
+                <svg width="20.969" height="40" class="">
+                  <use xlink:href="./assets/images/icons.svg#arrow-left"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -85,9 +99,11 @@
             </p>
           </header>
           <div class="about__body">
-            <h3 class="about__subtitle">Heading</h3>
-            <div class="about__wrapper">
-              <div class="card slider__slide">
+            <h3 class="title title--dark title--subtitle about__subtitle">
+              Heading
+            </h3>
+            <ul class="about__wrapper card-wrapper">
+              <li class="card">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">Lorem ipsum dolor sit amet.</p>
                 <img
@@ -100,25 +116,31 @@
                   "
                   class="card__img"
                 />
-              </div>
-              <div class="card slider__slide">
+              </li>
+              <li class="card">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
-                  Aenea
+                  Aenea uismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus.
                 </p>
-              </div>
-              <div class="card slider__slide">
+              </li>
+              <li class="card">
                 <h3 class="card__title">Ultra Mega Super Long Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
-                  Aenea
+                  Aenea uismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus.
                 </p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>

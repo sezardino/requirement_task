@@ -1,0 +1,92 @@
+html {
+  line-height: $flh_text;
+  font-size: $fs_text;
+  color: $fc_text;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: $bg_main;
+
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $font;
+  font-size: $fs_text;
+  font-weight: $fw_main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section,
+.section {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  padding: 0 30px;
+
+  @media screen and (max-width: $desktopWidth) {
+    max-width: $smDesktopWidth;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: $tableWidth;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    max-width: $phoneWidth;
+
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    max-width: $smPhoneWidth;
+    padding: 0 10px;
+  }
+}
