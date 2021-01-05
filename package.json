@@ -1,0 +1,27 @@
+{
+  "name": "requirement_task",
+  "version": "1.0.0",
+  "description": "requirement task for possition JFD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sezardino/requirement_task.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JS",
+    "TS",
+    "Webpack"
+  ],
+  "author": "Edward Arechwa <e.arechwa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sezardino/requirement_task/issues"
+  },
+  "homepage": "https://github.com/sezardino/requirement_task#readme"
+}
