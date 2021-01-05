@@ -4,13 +4,31 @@ $bg_hero:#215398;
 
 $bg_card: #ffffff;
 
-$fc_main: #2d3236;
+$font: 'Rubik';
+$fw_main: 400;
+$fw_light: 300;
+
+$fc_title: #2d3236;
 $fc_hero: #ffffff;
-$fc_card: #808080;
+$fc_text: #808080;
 
 $fs_ltitle: 40px;
 $fs_mtitle: 30px;
 $fs_stitle: 20px;
 
+
 $fs_title-descr: 20px;
 $fs_text: 15px;
+
+$flh_ltitle: 52px;
+$flh_mtitle: 28px;
+$flh_stitle: 28px;
+$flh_title-descr: 35px;
+$flh_text: 25px;
+
+$desktopWidth : 1230px;
+$smDesktopWidth : 1024px;
+$tableWidth : 768px;
+$smTableWidth : 640px;
+$phoneWidth : 480px;
+$smPhoneWidth : 320px;
