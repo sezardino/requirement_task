@@ -1,11 +1,11 @@
 const path = require('path');
-const webpack = require('webpack');
 const HTMLPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin: CleanPlugin} = require('clean-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const OptimizeJSPlugin = require('terser-webpack-plugin');
 const CssPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
@@ -79,6 +79,14 @@ const plugins = () => {
     new CssPlugin({
       filename: filename('css'),
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/assets/images'),
+          to: path.resolve(__dirname, 'dist/assets/images'),
+        },
+      ],
+    }),
   ];
 
   if (isDev) {
@@ -105,7 +113,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.ts'],
     alias: {
-      '@img': path.resolve(__dirname, 'src/assets/img/'),
+      '@img': path.resolve(__dirname, 'src/assets/images/'),
       '@': path.resolve(__dirname, 'src/assets'),
     },
   },
