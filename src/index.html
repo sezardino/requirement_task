@@ -3,9 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PSD2CSS</title>
   </head>
   <body>
-    <div class="container"></div>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__link"
+          ><span class="visually-hidden">to main page</span>
+          <img
+            src="./assets/images/logo.png"
+            alt="logotype"
+            width="160"
+            srcset="
+              ./assets/images/logo@2x.png 2x,
+              ./assets/images/logo@3x.png 3x
+            "
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">
+        Here must be description for this site(for SEO)
+      </h1>
+      <section class="hero">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <h2 class="title title--white hero__title">Heading</h2>
+            <p class="title-descr title-descr--white">
+              Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+            </p>
+          </header>
+          <div class="slider hero__body">
+            <div class="slider__inner">
+              <div class="card slider__slide">
+                <h3 class="card__title">Heading</h3>
+                <p class="card__description">Lorem ipsum dolor sit amet.</p>
+                <img
+                  src="./assets/images/wp.png"
+                  alt="some image"
+                  width="42"
+                  srcset="
+                    ./assets/images/wp@2x.png 2x,
+                    ./assets/images/wp@3x.png 3x
+                  "
+                  class="card__img"
+                />
+              </div>
+              <div class="card slider__slide">
+                <h3 class="card__title">Heading</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+                  Aenea
+                </p>
+              </div>
+              <div class="card slider__slide">
+                <h3 class="card__title">Ultra Mega Super Long Heading</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+                  Aenea
+                </p>
+              </div>
+            </div>
+            <div class="slider__arrows-wrapper">
+              <button class="slider__arrow slider__arrow--next">
+                <span class="visually-hidden">next slide</span>
+              </button>
+              <button class="slider__arrow slider__arrow--prev">
+                <span class="visually-hidden">prev slide</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <header class="about__header">
+            <h2 class="title title--dark about__title">Heading</h2>
+            <p class="title-descr title-descr--dark about__title-descr">
+              Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+            </p>
+          </header>
+          <div class="about__body">
+            <h3 class="about__subtitle">Heading</h3>
+            <div class="about__wrapper">
+              <div class="card slider__slide">
+                <h3 class="card__title">Heading</h3>
+                <p class="card__description">Lorem ipsum dolor sit amet.</p>
+                <img
+                  src="./assets/images/drupal.png"
+                  alt="some image"
+                  width="42"
+                  srcset="
+                    ./assets/images/drupal@2x.png 2x,
+                    ./assets/images/drupal@3x.png 3x
+                  "
+                  class="card__img"
+                />
+              </div>
+              <div class="card slider__slide">
+                <h3 class="card__title">Heading</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+                  Aenea
+                </p>
+              </div>
+              <div class="card slider__slide">
+                <h3 class="card__title">Ultra Mega Super Long Heading</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consect etur adipiscing elit.
+                  Aenea
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
