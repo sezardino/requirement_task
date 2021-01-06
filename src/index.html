@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSD2CSS</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
   </head>
   <body>
     <header class="header">
@@ -41,9 +36,9 @@
               Lorem ipsum dolor sit amet, consect etur adipiscing elit.
             </p>
           </header>
-          <div class="slider hero__body">
-            <ul class="slider__inner card-wrapper">
-              <li class="card slider__slide">
+          <div class="slider hero__body swiper-container">
+            <ul class="slider__inner swiper-wrapper">
+              <li class="card slider__slide swiper-slide">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">Lorem ipsum dolor sit amet.</p>
                 <img
@@ -57,7 +52,7 @@
                   class="card__img"
                 />
               </li>
-              <li class="card slider__slide">
+              <li class="card slider__slide swiper-slide">
                 <h3 class="card__title">Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
@@ -65,7 +60,7 @@
                   lacus.
                 </p>
               </li>
-              <li class="card slider__slide">
+              <li class="card slider__slide swiper-slide">
                 <h3 class="card__title">Ultra Mega Super Long Heading</h3>
                 <p class="card__description">
                   Lorem ipsum dolor sit amet, consect etur adipiscing elit.
@@ -74,17 +69,19 @@
               </li>
             </ul>
             <div class="slider__arrows-wrapper">
-              <button class="slider__arrow slider__arrow--next">
+              <button class="swiper__arrow--next">
                 <span class="visually-hidden">next slide</span>
-                <svg width="21.03" height="40" class="">
+                <div class="swiper-button-next"></div>
+                <!-- <svg width="21.03" height="40" class="">
                   <use xlink:href="./assets/images/icons.svg#arrow-right"></use>
-                </svg>
+                </svg> -->
               </button>
-              <button class="slider__arrow slider__arrow--prev">
+              <button class="swiper__arrow--prev">
                 <span class="visually-hidden">prev slide</span>
-                <svg width="20.969" height="40" class="">
+                <div class="swiper-button-prev"></div>
+                <!-- <svg width="20.969" height="40" class="">
                   <use xlink:href="./assets/images/icons.svg#arrow-left"></use>
-                </svg>
+                </svg> -->
               </button>
             </div>
           </div>
@@ -138,9 +135,5 @@
         </div>
       </section>
     </main>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
   </body>
 </html>
