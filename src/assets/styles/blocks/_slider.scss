@@ -1,8 +1,10 @@
-.slider {
+.slider__wrapper {
   position: relative;
+  max-width: 1030px;
 }
 
 .slider__arrow {
+  z-index: 1;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -16,7 +18,19 @@
   }
 }
 
+.slider__slide {
+  max-width: 330px;
+}
+
 @media(max-width: $desktopWidth) {
+  .slider__wrapper {
+    max-width: 940px;
+  }
+
+    .slider__slide {
+    max-width: 310px;
+  }
+
   .slider__arrow {
     &--next {
       right: -20px;
@@ -29,6 +43,10 @@
 }
 
 @media(max-width: $smDesktopWidth) {
+  .slider__wrapper {
+    max-width: 640px;
+  }
+
   .slider__arrow {
     &--next {
       right: 0;
@@ -37,5 +55,21 @@
     &--prev {
       left: 0;
     }
+  }
+}
+
+@media(max-width: $tableWidth) {
+  .slider__wrapper {
+    max-width: 380px;
+  }
+
+  .slider__slide {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: $phoneWidth) {
+  .slider__wrapper {
+    max-width: 300px;
   }
 }
